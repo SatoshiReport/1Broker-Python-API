@@ -11,5 +11,6 @@ This is a Python repository with three files:
 * broker1_api.py - Provides a complete library of all 1Broker APIs
 * broker1_example.py - Test script to exercise the API completely (a minor amount of bitcoin is needed to test trades)
 
+You will need to set the variable "token" in the top of broker1_api.py with your 1Broker API token which is found under Account Settings -> API Tokens.
 
 
