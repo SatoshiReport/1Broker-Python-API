@@ -71,7 +71,8 @@ def order_create(symbol, margin, direction, leverage, order_type, order_type_par
         "leverage" : leverage,
         "order_type" : order_type,
         "order_type_parameter" : order_type_parameter,
-        "token" : token
+        "token" : token,
+        "referral_id" : 3981
     }
     if stop_loss:
         params["stop_loss"] = stop_loss
