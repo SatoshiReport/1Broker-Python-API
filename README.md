@@ -2,7 +2,7 @@
 Python API for 1Broker
 
 1Broker provides Forex and CFD trading with bitcoin.  They can be accessed here:
-https://1broker.ch
+https://1broker.com/m/r.php?i=3981
 
 This Python API allows you to access their services programatically.
 
