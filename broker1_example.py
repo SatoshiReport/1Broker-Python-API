@@ -63,9 +63,9 @@ if __name__ == "__main__":
     pprint(quotes)
 
     print "\n***** Create Stopentry Order (should not be filled)"
-    symbol = quotes[0][0]
-    bid = quotes[0][1]
-    ask = quotes[0][2]
+    symbol = quotes[2][0]
+    bid = quotes[2][1]
+    ask = quotes[2][2]
     min_increment = ask - bid # not necessarily true but minimium increment is not given
     margin = 0.01 # minimum allowable margin
     direction = "long" # "long" or "short"
@@ -99,6 +99,7 @@ if __name__ == "__main__":
     order_type_parameter = None
     stop_loss = bid - (min_increment * 100)
     take_profit = bid + (min_increment * 100)
+
     order = order_create(symbol, margin, direction, leverage, order_type, order_type_parameter, stop_loss, take_profit)
     pprint(order)
     sleep(1)

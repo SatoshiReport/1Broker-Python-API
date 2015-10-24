@@ -5,7 +5,7 @@ import os
 
 
 token = os.environ["BROKER1_TOKEN"]
-url = "1broker.com"
+url = "https://1broker.com"
 source = "1Broker"
 resource_header = "/api/v1/"
 
