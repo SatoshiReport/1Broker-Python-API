@@ -5,7 +5,7 @@ import datetime
 
 
 token = os.environ["BROKER1_TOKEN_V2"]
-url = "1broker.com"
+url = "https://1broker.com"
 source = "1Broker"
 resource_header = "/api/v2/"
 
