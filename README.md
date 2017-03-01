@@ -1,4 +1,4 @@
-# 1Broker
+# 1Broker Python API
 Python API for 1Broker (version 2 of their API)
 
 1Broker provides Forex and CFD trading with bitcoin.  They can be accessed here:
