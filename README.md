@@ -10,3 +10,5 @@ We have three files:
 * HttpMD5Util.py - Used for HttpGet calls
 * broker1_api_v2.py - Provides a complete library of all 1Broker API calls
 * broker1_example_v2.py - Test script to exercise the API completely (a minor amount of bitcoin is needed to test trades)
+
+R API provided here: https://github.com/SatoshiReport/1Broker-R-API
