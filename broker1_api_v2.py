@@ -86,6 +86,19 @@ def user_transaction_log(offset=0, limit=20, date_start=date_start_string(), dat
     return result['response']
 
 
+def user_quota_status():
+
+    resource = resource_header + "user/quota_status.php"
+    params = {
+        "token": token
+    }   
+
+    result = httpGet(url, resource, params, source)
+    error_check(result)
+
+    return result['response']
+
+
 def order_open():
 
     resource = resource_header + "order/open.php"
@@ -265,7 +278,7 @@ def market_quotes(symbols):
     return result['response']
 
 
-def market_bars(symbol, resolution = 86400, date_start=date_start_string(), date_end=date_end_string()):
+def market_bars(symbol, resolution = 86400, date_start=date_start_string(), date_end=date_end_string(), limit = None):
 
     resource = resource_header + "market/bars.php"
     params = {
@@ -273,7 +286,8 @@ def market_bars(symbol, resolution = 86400, date_start=date_start_string(), date
         "token" : token,
         "resolution" : resolution,
         "date_start" : date_start, 
-        "date_end" : date_end
+        "date_end" : date_end,
+        "limit": limit
     }
 
     result = httpGet(url, resource, params, source)
