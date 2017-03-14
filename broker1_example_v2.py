@@ -25,6 +25,10 @@ if __name__ == "__main__":
     print "\n***** User Transaction Log"
     pprint(user_transaction_log())
     sleep(1)
+    
+    print "\n***** User Quota Status"
+    pprint(user_quota_status())
+    sleep(1)
 
     print "\n***** Market Categories"
     pprint(market_categories())
